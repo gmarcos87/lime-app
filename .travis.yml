@@ -1,14 +1,11 @@
 language: node_js
 node_js:
-  - 7.8.0
+- 7.8.0
 script: npm run build --production
-
 deploy:
   provider: releases
-  skip_cleanup: true
-  overwrite: true
+  api_key:
+    secure: jCgjm8r+Khgwx3gwcPMo4TGKMxvemYuT8Zn/kFap1BamVCY5JgKfUV4hPaFT6KmaK54Ld9csgDhPVgkBUalovh/nf28njfNF6rZgwr2yYf8ZlSoB5kJ2sHNiDtR5dMgw4NiQmj/3zNf3wi9MNJEEv2abLUmcRqO0eGZT9y6Zez7xZWXhRisixp4mCx+LcENQaOkqmxhLx05ApXFyD/VM6WPOt6Qc3HAKK0K9eLy0NpYS+vVP6qoWOSOxDgUgBAMbr8A9i3/tTWqOBZH0WnTJ9TWRg4/fEmJcEYsi9sczhrr/LEOH2i+97Dt3AhNtkzUvFpYD1b34CunAQ/NSgt4yEsP4xBit83topf+E+oXfhK4oTwRLQcQ0vZmLnX0+1uuh/eCVXIz3t8MOvhqLNWwHh4UcQvva785D20odU5CprLT9h2Rl/Kr+YgoDiErrEFwAhO+CCdJq+mS/JWsYI3cBsnKkddn2DC0yupamCPW5kGok05mt86VoPncWiJego1BT8n1U45sE4bRTHfqOiJoXiQTZCG6SB5hDg99oBJXXxXFlFeRcAhdMu5/3YvLtwpTRs5X0LXIeK+EUBGXvwGptE+gqnJcu2tLPdbUrZFIda84Gjatkb7WMww487GHyOwxv7JZ3EgeZmt10FYPIelz/s7tAUZzJX2u5BO+3buMIXqU=
   local_dir: build
-  api_key: $GITHUB_TOKEN
-  file: "FILE TO UPLOAD"
   on:
-    tags: true
+    repo: libremesh/lime-app
