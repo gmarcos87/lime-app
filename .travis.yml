@@ -8,7 +8,7 @@ deploy:
   skip_cleanup: true
   overwrite: true
   local_dir: build
-  github_token: $GITHUB_TOKEN
+  api_key: $GITHUB_TOKEN
   file: "FILE TO UPLOAD"
   on:
     tags: true
