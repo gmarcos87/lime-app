@@ -102,5 +102,9 @@
     "simplegrid": "^1.0.2",
     "skeleton-less": "^2.0.1",
     "ulog": "^1.0.3"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/<YOUR-COLLECTIVE-SLUG>"
   }
 }
