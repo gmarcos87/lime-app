@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "WEB_PATH": "@lime-app-path"
+      }
+    }
+  }
+  
